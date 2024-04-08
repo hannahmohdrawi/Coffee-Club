@@ -1,0 +1,278 @@
+body{
+    /*background-color:hsla(23, 92%, 19%, 0.906);*/
+    text-align:center;
+    color: white;
+    background-image:url('Images/Coffee-Beans-dark.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /*max-height: 200px;*/
+}
+
+/*Large container for grid*/
+.main-container{
+    display: grid;
+    grid-template-rows: 50px 150px 100px;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+/*Heading container needs to be top middle*/
+.h1-container{
+    
+    max-height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    float: top;
+    position: sticky;
+    grid-row: 1;
+    grid-column: span 12;
+    margin-bottom: -50px;
+    
+}
+
+h1{
+    font-size: 5em;
+    font-family: 'Butterfly Kids', sans-serif;
+    align-self: center;
+    text-shadow: 3px 5px 5px black;
+    
+}
+
+/*Intro container in middle*/
+
+/*Sister company container needs to be on left side */
+
+.sister-company-container{
+    font-family: 'Truculenta';
+    position:relative;
+    max-width: 100px;
+    top: 5px;
+    left: 10px;
+    grid-row: 2;
+    grid-column: 1/span 3;
+    max-height: 120px;
+    margin: 0px;
+    
+}
+
+
+/*Intro container in middle*/
+.intro-container{
+  font-size:20px;
+  text-align: center;
+  font-family: 'Truculenta';
+  grid-row: 2;
+  grid-column: 5/span 8;
+  max-height: 120px;
+  margin-bottom: 0;
+  width: 300px;
+
+}
+
+.menu{
+  grid-column: 4/span 5;
+  grid-row: 3;
+  
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  
+  
+  width: 500px;
+  height: 600px;
+  
+  top: 10px;
+  
+  background-color: hsl(44, 89%, 45%, 0.2);
+ 
+  
+  /*
+  flex-wrap: nowrap;
+  justify-content: center;
+  */
+
+}
+
+
+a:hover{
+    color:aquamarine;
+    cursor: pointer;
+}
+
+a:visited{
+    color:blanchedalmond;
+}
+
+
+.menu ol{
+    align-self: center;
+    font-size: 1em;
+    text-align:center;
+    display:inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.prices ol{
+    text-decoration: none;
+}
+
+.coffee{
+    font-size: 20px;
+    
+    grid-row: 2 / span 1;
+    grid-column: 2/ span 1;
+
+    /*
+    width: 250px;
+    position: relative;
+    left: 10px;
+    top: 50px;
+    align-self: center;
+    order:-1;
+    */
+
+}
+
+.prices{
+    font-size: 20px;
+    
+    grid-row: 2 / span 1;
+    grid-column: 3/ span 1;
+
+    /*
+    width: 250px;
+    position: relative;
+    right: 10px;
+    top: 50px;
+    align-self: center;
+    order:1;
+    */
+
+
+}
+
+.extras{
+    font-size: 10px;
+  
+    grid-row: 3 / span 1;
+    grid-column: 2/ 4;
+    
+}
+
+/*Menu container needs to be in the middle*/
+
+.menu h3{
+    text-align: center;
+    grid-row: 1/span 1;
+    grid-column: 2/ span 2;
+    font-size: 2em;
+    font-family: 'Truculenta';
+}
+
+li:nth-child(even){
+    background-color:rgb(108, 75, 3);
+}
+
+li:nth-child(odd){
+    background-color: rgb(155, 106, 2);
+}
+
+
+/*CSS Font Styles*/
+
+
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/intertight/v7/NGSwv5HMAFg6IuGlBNMjxLsH8ahuQ2e8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Truculenta';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/truculenta/v22/LhW1MVvBKusVIfNYGi1-WvRV2jkJOemySNrBccf6GVBdQB-9.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Gamja Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gamjaflower/v22/6NUR8FiKJg-Pa0rM6uN40Z4kzP9Ddt3saGoQnQfTCJMp5TZTP8x_uFxjfQ.0.woff2) format('woff2');
+    unicode-range: U+f9ca-fa0b, U+ff03-ff05, U+ff07, U+ff0a-ff0b, U+ff0d-ff19, U+ff1b, U+ff1d, U+ff20-ff5b, U+ff5d, U+ffe0-ffe3, U+ffe5-ffe6;
+  }
+
+  @font-face {
+    font-family: 'Charmonman';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/charmonman/v18/MjQAmiR3vP_nuxDv47jiYC2HqLhA9cplCnc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Noto Emoji';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/notoemoji/v47/bMrymSyK7YY-MEu6aWjPFMG4WXMLkWuxpNoO_nZGceU.0.woff2) format('woff2');
+    unicode-range: U+1f1e6-1f1ff;
+  }
+
+
+@font-face {
+    font-family: 'Bonbon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bonbon/v30/0FlVVPeVlFec4eePdzsBTwUp-Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Carter One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/carterone/v17/q5uCsoe5IOB2-pXv9UcNExN8hK5SAMo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Henny Penny';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/hennypenny/v17/wXKvE3UZookzsxz_kjGSfPQtvXIZt9DS.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Combo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/combo/v21/BXRlvF3Jh_fIhj0lDO5Q82f1.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Butterfly Kids';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/butterflykids/v25/ll8lK2CWTjuqAsXDqlnIbMNs5R4dpRBJAm1C.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
