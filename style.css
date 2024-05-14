@@ -1,13 +1,13 @@
 body{
-    /*background-color:hsla(23, 92%, 19%, 0.906);*/
-    text-align:center;
-    color: white;
-    background-image:url('Images/Coffee-Beans-dark.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    /*max-height: 200px;*/
+  /*background-color:hsla(23, 92%, 19%, 0.906);*/
+  text-align:center;
+  color: white;
+  background-image:url('Images/Coffee-Beans-dark.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /*max-height: 200px;*/
 }
 
 /*Large container for grid*/
@@ -34,10 +34,10 @@ body{
 }
 
 h1{
-    font-size: 5em;
-    font-family: 'Butterfly Kids', sans-serif;
-    align-self: center;
-    text-shadow: 3px 5px 5px black;
+  font-size: 5em;
+  font-family: 'Butterfly Kids', sans-serif;
+  align-self: center;
+  text-shadow: 3px 5px 5px black;
     
 }
 
