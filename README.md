@@ -1,12 +1,14 @@
 # Coffee-Club
-Coffee Bean's web page.
+Part of Codecademy's Learn PHP course. This code uses user input from the terminal to perform actions in the game.
 
 ## Description
-This one of the first websites created by myself using the basic HTML and CSS knowledge obtained frrom the start of Codecademy's Full Stack Engineer course. Using HTML and CSS to style a static website to allow for the creation of a webpage for the Coffee Club. Main goal was to practice CSS grid. 
+Hello there. It’s been a harrowing few weeks. First your toenail issue, and now Great-Aunt Natasha’s emu farm is in danger of being repossessed! So here you are—after a brief stopover at the Mayo Clinic—in Uncle Boris’s remote cabin in the heart of the Terror Woods. Family legend holds that a golden statue of immense value is hidden somewhere within these walls…
+
+Welcome to the world of interactive fiction. In this project, you’ll be building a text adventure game called Save the Farm!
+
+You’ll be practicing everything you’ve learned about booleans, conditionals, and logical operators to create a fun, silly game. You can customize the game to your taste. Once you’ve completed this project, you’ll understand the mechanics of building an interactive text game, so, from there, the world is your oyster (as Uncle Boris always used to say). 
 
 ## Language used:
-* HTML
-* CSS
-
+* PHP
 
 
